@@ -24,7 +24,7 @@ import (
 
 	utiltesting "k8s.io/client-go/util/testing"
 
-	"github.com/imdario/mergo"
+	"dario.cat/mergo"
 
 	"k8s.io/apimachinery/pkg/runtime"
 	restclient "k8s.io/client-go/rest"
@@ -72,7 +72,7 @@ func TestMergoSemantics(t *testing.T) {
 			// The mergo library has previously changed in a an incompatible way.
 			// example:
 			//
-			//   https://github.com/imdario/mergo/commit/d304790b2ed594794496464fadd89d2bb266600a
+			//   https://dario.cat/mergo/commit/d304790b2ed594794496464fadd89d2bb266600a
 			//
 			// This test verifies that the semantics of the merge are what we expect.
 			// If they are not, the mergo library may have been updated and broken
@@ -101,7 +101,7 @@ func TestMergoSemantics(t *testing.T) {
 			// The mergo library has previously changed in a an incompatible way.
 			// example:
 			//
-			//   https://github.com/imdario/mergo/commit/d304790b2ed594794496464fadd89d2bb266600a
+			//   https://dario.cat/mergo/commit/d304790b2ed594794496464fadd89d2bb266600a
 			//
 			// This test verifies that the semantics of the merge are what we expect.
 			// If they are not, the mergo library may have been updated and broken
